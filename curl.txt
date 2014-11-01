@@ -1,0 +1,5 @@
+curl -X POST -H "Content-Type: application/json" -d "{\"id\": \"1\",\"firstName\":\"Bill\", \"lastName\":\"Burke\"}" http://localhost:8080/myapp/students
+curl -X POST -H "Content-Type: application/json" -d "{\"id\": \"2\",\"firstName\":\"Amy\", \"lastName\":\"Kim\"}" http://localhost:8080/myapp/students
+curl -X PUT -H "Content-Type: application/json" -d "{\"id\": \"2\",\"firstName\":\"Amy\", \"lastName\":\"Kim\"}" http://localhost:8080/myapp/students/Kim
+curl -X PUT -H "Content-Type: application/json" -d "{\"id\": \"2\",\"firstName\":\"Hong\", \"lastName\":\"Kim\"}" http://localhost:8080/myapp/students/Kim
+curl -X GET -H "Content-Type: application/json" http://localhost:8080/myapp/students/printNames 
